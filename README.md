@@ -22,9 +22,10 @@ Install the package via Composer:
 composer require vhar/laravel-files
 ```
 
-Run migrations:
+Publish & Run migrations:
 
 ```bash
+php artisan vendor:publish --tag=laravel-files-migrations  
 php artisan migrate
 ```
 

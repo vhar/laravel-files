@@ -94,6 +94,23 @@ $file = LaravelFiles::upload(
 
 ---
 
+### Replace a file
+
+Replace the physical file and update its metadata while keeping the existing `File` record and relationships.
+
+The file ID remains unchanged.
+
+```php
+use Vhar\LaravelFiles\Facades\LaravelFiles;
+
+$file = LaravelFiles::replace(
+    $file,
+    $request->file('image')
+);
+```
+
+---
+
 ### Attach a file
 
 ```php
